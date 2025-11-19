@@ -1,0 +1,114 @@
+.settings {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 3rem;
+}
+
+.settings > aside {
+  width: 40vw;
+  padding: 1rem;
+  padding-right: 1rem;
+  background-color: #2b2d31;
+
+  display: grid;
+  align-content: start;
+  justify-content: end;
+}
+.settings > aside > ul {
+  list-style: none;
+
+  display: grid;
+  gap: 0.2rem;
+}
+.settings > aside button {
+  text-align: start;
+  width: 6.7rem;
+  padding: 0.25rem 0.6rem;
+  cursor: pointer;
+  background-color: inherit;
+  border: none;
+  border-radius: 4px;
+  color: lightgray;
+  font-size: 0.8rem;
+}
+.settings > aside button:hover {
+  background-color: #36373d;
+}
+.settings > aside h1 {
+  padding-left: 0.6rem;
+}
+.settings > aside button.selected {
+  background-color: #4c4d53;
+  color: white;
+}
+
+.settings > .options {
+  margin-top: 3rem;
+
+  display: grid;
+  justify-content: start;
+}
+.settings > .options > main {
+  padding-right: 3rem;
+  position: relative;
+}
+.settings > .options h1 {
+  color: white;
+  font-size: 1.5rem;
+}
+.settings > .options .close {
+  position: absolute;
+  top: 1.25rem;
+  right: 0;
+
+  display: grid;
+  justify-items: center;
+  gap: 0.2rem;
+}
+.settings > .options .close > svg {
+  border: 1px solid lightgray;
+  padding: 0.2rem;
+  border-radius: 50%;
+  width: 1.25rem;
+  fill: lightgray;
+  cursor: pointer;
+}
+.settings > .options .close > svg:hover {
+  background-color: #3a3c42;
+}
+.settings > .options .required > label > div:first-child {
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+  justify-content: start;
+}
+.settings > .options .required svg {
+  position: absolute;
+  left: -1rem;
+
+  width: 1rem;
+  fill: #d14040;
+}
+.settings > .options select {
+  width: 100%;
+}
+.settings > .options .saveChanges {
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+  justify-content: start;
+  gap: 0.5rem;
+}
+.settings > .options .saveChanges > span {
+  color: #359356;
+}
+.settings > .options .aboutRemainingCharacters {
+  position: absolute;
+  right: 0.5rem;
+  bottom: 0.5rem;
+}
+.settings > .options .statusRemainingCharacters {
+  position: absolute;
+  right: 0.35rem;
+  bottom: 0.35rem;
+}

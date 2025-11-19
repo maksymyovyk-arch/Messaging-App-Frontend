@@ -1,0 +1,189 @@
+.mainSidebar {
+  background-color: #2b2d31;
+  width: 14rem;
+  height: 100vh;
+
+  display: grid;
+  align-content: space-between;
+}
+.mainSidebar h1 {
+  margin: 0;
+  margin-bottom: 0.2rem;
+
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+}
+.mainSidebar .plusButton {
+  width: 0.9rem;
+  cursor: pointer;
+  fill: lightgray;
+  padding-right: 0.5rem;
+}
+
+.mainSidebar > section {
+  padding: 0.5rem;
+
+  display: grid;
+  gap: 1.5rem;
+}
+.mainSidebar .chats {
+  display: grid;
+  list-style: none;
+  gap: 0.2rem;
+}
+
+.mainSidebar .chat {
+  padding: 0.3rem;
+
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.mainSidebar .chat > div {
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+}
+.mainSidebar .chat:hover:not(.userInfo > li) {
+  background-color: #36373d;
+  border-radius: 9px;
+  cursor: pointer;
+}
+.mainSidebar .chat > .img {
+  display: grid;
+  position: relative;
+}
+.mainSidebar .chat > img,
+.mainSidebar .chat > .img > img {
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+}
+.mainSidebar .chat .img > div {
+  position: absolute;
+  right: -0.2rem;
+  bottom: -0.2rem;
+  width: 0.6rem;
+  height: 0.6rem;
+  border-radius: 50%;
+  border: 3px solid #2b2d31;
+}
+.mainSidebar .chat .img > div.online {
+  background-color: #23a359;
+}
+.mainSidebar .chat .img > div.offline {
+  background-color: #80848e;
+}
+.mainSidebar .chat .img > div.dnd {
+  background-color: #f13f43;
+}
+
+.mainSidebar .chat .info {
+  color: lightgray;
+  margin-left: 0.5rem;
+  margin-right: 0.3rem;
+}
+.mainSidebar .chat .info > div:first-child {
+  font-size: 0.9rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.mainSidebar .chat .info > div:nth-child(2) {
+  font-size: 0.6rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.mainSidebar > .userInfo {
+  background-color: #232428;
+}
+.mainSidebar .userInfo .info,
+.mainSidebar .userInfo .info > div:first-child,
+.mainSidebar .userInfo .info > div:nth-child(2) {
+  width: 7.8rem;
+}
+.mainSidebar > .userInfo > li > button {
+  background-color: inherit;
+  padding: 0.15rem;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+
+  display: grid;
+}
+.mainSidebar > .userInfo > li > button:hover {
+  background-color: #3d3e45;
+}
+.mainSidebar > .userInfo > li svg {
+  width: 1.3rem;
+  fill: lightgray;
+  cursor: pointer;
+}
+
+/* other options (friends etc.) */
+.mainSidebar .optionsList {
+  display: grid;
+  gap: 0.2rem;
+}
+.mainSidebar .optionsList li {
+  padding: 0.5rem;
+  border-radius: 4px;
+  color: lightgray;
+  cursor: pointer;
+
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: start;
+  align-items: center;
+}
+.mainSidebar .optionsList li p {
+  margin-left: 0.75rem;
+  margin-right: 0.3rem;
+}
+.mainSidebar .optionsList li:hover {
+  background-color: #36373d;
+}
+.mainSidebar .chat:hover .info:not(.accountInfo),
+.mainSidebar .chat.selected .info {
+  color: white;
+}
+.mainSidebar .optionsList li.selected {
+  background-color: #4c4d53;
+  color: white;
+}
+
+.mainSidebar .optionsList svg {
+  width: 1.5rem;
+  fill: lightgray;
+}
+
+.mainSidebar .selected {
+  background-color: #4c4d53;
+  border-radius: 8px;
+  color: white;
+}
+.mainSidebar .selected:hover {
+  background-color: #4c4d53 !important;
+}
+
+.DM .actions {
+  display: grid;
+}
+.DM .chat:hover .actions > svg {
+  margin-right: 0.2rem;
+  width: 0.9rem;
+  fill: lightgray;
+}
+.DM .chat .actions > svg:hover {
+  fill: white;
+}
+
+.mainSidebar .accountInfo > div:first-child {
+  color: white;
+}

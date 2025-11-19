@@ -1,0 +1,66 @@
+.auth {
+  width: 100vw;
+  height: 100vh;
+  background-color: #232428;
+
+  display: grid;
+  grid-auto-flow: column;
+  place-content: center;
+}
+.auth > main {
+  background-color: #313338;
+  padding: 3rem;
+  border-radius: 12px;
+
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 1fr 1fr;
+  place-content: center;
+}
+.auth .register {
+  padding-right: 3.5rem;
+  border-right: 4px solid #2b2d31;
+}
+.auth .login {
+  padding-left: 3.5rem;
+}
+
+.auth h1 {
+  margin: 0;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  color: white;
+  justify-self: center;
+}
+
+.auth form {
+  display: grid;
+}
+.auth button {
+  background-color: #248046;
+  color: white;
+  padding: 0.5rem 1rem;
+  font-size: 1.15rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  justify-self: center;
+  margin-top: 1.5rem;
+}
+
+.auth .required > label > div:first-child {
+  position: relative;
+
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+  justify-content: start;
+}
+
+.auth .required svg {
+  position: absolute;
+  left: -1rem;
+
+  width: 1rem;
+  fill: #d14040;
+}

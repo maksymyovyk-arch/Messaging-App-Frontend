@@ -1,0 +1,29 @@
+.avatarImage {
+  display: grid;
+  position: relative;
+  width: max-content;
+}
+img,
+.avatarImage > img {
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+}
+.avatarImage > div {
+  position: absolute;
+  right: -0.2rem;
+  bottom: -0.2rem;
+  width: 0.6rem;
+  height: 0.6rem;
+  border-radius: 50%;
+  border: 3px solid #2b2d31;
+}
+.avatarImage > div.online {
+  background-color: #23a359;
+}
+.avatarImage > div.offline {
+  background-color: #80848e;
+}
+.avatarImage > div.dnd {
+  background-color: #f13f43;
+}

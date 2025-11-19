@@ -1,0 +1,169 @@
+.chatDM {
+  width: calc(100vw - 224px);
+
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 1fr auto;
+}
+.chatDM main {
+  height: 100vh;
+
+  display: grid;
+  align-content: space-between;
+  grid-template-rows: 1fr auto;
+}
+.chatDM .messages {
+  padding-top: 0.5rem;
+  font-size: 0.9rem;
+  overflow: scroll;
+  color: lightgray;
+
+  display: grid;
+  align-content: start;
+}
+.chatDM .messages .message {
+  padding: 0 1rem;
+  padding-top: 0.1rem;
+
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: start;
+  gap: 0.35rem;
+}
+.chatDM .messages .message:hover {
+  background-color: #2e3035;
+}
+.chatDM .messages .message .info {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+.chatDM .messages .message .info > span:first-child {
+  color: white;
+}
+.chatDM .messages .message .info > span:last-child {
+  color: darkgray;
+  font-size: 0.65rem;
+}
+
+/* input */
+.chatDM form {
+  padding: 1rem;
+  position: relative;
+}
+.chatDM input {
+  background-color: #383a40;
+  padding: 0.6rem;
+  width: calc(100% - 3.5rem);
+  border-radius: 6px;
+  padding-right: 3rem;
+}
+.chatDM .inputRemChars {
+  color: white;
+  position: absolute;
+  font-size: 0.75rem;
+
+  right: 1.8rem;
+  bottom: 1.55rem;
+}
+.chatDM .inputRemCharsEdit {
+  color: white;
+  position: absolute;
+  font-size: 0.75rem;
+
+  right: 1rem;
+  bottom: 1.1rem;
+}
+.chatDM .inputRemCharsEditCondense {
+  color: white;
+  position: absolute;
+  font-size: 0.75rem;
+
+  right: -1.5rem;
+  bottom: 1.1rem;
+}
+
+/* aside */
+.chatDM h1 {
+  margin: 0;
+}
+.chatDM hr {
+  margin: 0.6rem 0;
+}
+.chatDM aside {
+  width: 12rem;
+  min-width: 10rem;
+  padding: 0.75rem;
+  background-color: #232428;
+  color: lightgray;
+}
+.chatDM aside .info {
+  border-radius: 4px;
+  margin-top: 1rem;
+  padding: 0.5rem;
+  background-color: #111214;
+  font-size: 0.75rem;
+}
+.chatDM aside .username {
+  font-size: 1.3rem;
+}
+.chatDM aside .about {
+  margin-bottom: 0.25rem;
+}
+.chatDM aside .avatarImage img {
+  width: 4rem;
+  height: 4rem;
+}
+.chatDM aside .avatarImage > div {
+  width: 0.9rem;
+  height: 0.9rem;
+  border: 4.5px solid #2b2d31;
+}
+
+/* message actions */
+.chatDM .messages .message {
+  position: relative;
+}
+.chatDM .message .messageActions {
+  visibility: hidden;
+  position: absolute;
+  right: 1.5rem;
+  top: -1rem;
+
+  display: grid;
+  grid-auto-flow: column;
+}
+.chatDM .message:hover .messageActions {
+  visibility: visible;
+
+  border: 1px solid #232428;
+  background-color: #2b2d31;
+}
+
+.chatDM .messageActions .messageAction {
+  padding: 0.1rem;
+  width: 1.3rem;
+  height: 1.3rem;
+
+  display: grid;
+  place-content: center;
+}
+.chatDM .messageActions .messageAction:hover {
+  background-color: #313338;
+}
+.chatDM .messageActions .messageAction > svg {
+  width: 1.1rem;
+  height: 1.1rem;
+}
+.chatDM .messageActions .delete {
+  fill: rgb(255, 64, 64);
+}
+.chatDM .messageActions .edit {
+  fill: lightgray;
+}
+
+/* edit message input */
+.chatDM .editMessageForm {
+  padding: 0.5rem 0;
+  width: calc(100vw - 31.9rem);
+}
